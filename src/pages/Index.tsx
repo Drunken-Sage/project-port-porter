@@ -22,27 +22,27 @@ const Index = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-primary/10 to-background">
+      <section className="py-20 px-4 bg-gradient-to-br from-primary/20 via-secondary/10 to-accent/20 animate-fade-in">
         <div className="container mx-auto text-center">
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-foreground">
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-foreground animate-scale-in">
             Empowering Minds, Building Futures
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Where excellence meets opportunity. Join us in creating tomorrow's leaders through innovative education and nurturing environment.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <Button size="lg">Schedule a Visit</Button>
-            <Button size="lg" variant="outline">Learn More</Button>
+            <Button size="lg" className="bg-primary hover:bg-primary/90">Schedule a Visit</Button>
+            <Button size="lg" className="bg-secondary hover:bg-secondary/90">Learn More</Button>
           </div>
         </div>
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 px-4">
+      <section id="about" className="py-16 px-4 bg-gradient-to-r from-accent/10 to-background">
         <div className="container mx-auto">
           <h3 className="text-4xl font-bold text-center mb-12 text-foreground">Why Choose Excellence Academy</h3>
           <div className="grid md:grid-cols-3 gap-8">
-            <Card>
+            <Card className="hover-scale border-l-4 border-l-primary">
               <CardHeader>
                 <Award className="w-12 h-12 mb-4 text-primary" />
                 <CardTitle>Award-Winning Education</CardTitle>
@@ -53,9 +53,9 @@ const Index = () => {
                 </CardDescription>
               </CardContent>
             </Card>
-            <Card>
+            <Card className="hover-scale border-l-4 border-l-secondary">
               <CardHeader>
-                <Users className="w-12 h-12 mb-4 text-primary" />
+                <Users className="w-12 h-12 mb-4 text-secondary" />
                 <CardTitle>Expert Faculty</CardTitle>
               </CardHeader>
               <CardContent>
@@ -64,9 +64,9 @@ const Index = () => {
                 </CardDescription>
               </CardContent>
             </Card>
-            <Card>
+            <Card className="hover-scale border-l-4 border-l-accent">
               <CardHeader>
-                <BookOpen className="w-12 h-12 mb-4 text-primary" />
+                <BookOpen className="w-12 h-12 mb-4 text-accent" />
                 <CardTitle>Comprehensive Curriculum</CardTitle>
               </CardHeader>
               <CardContent>
@@ -80,40 +80,40 @@ const Index = () => {
       </section>
 
       {/* Programs Section */}
-      <section id="programs" className="py-16 px-4 bg-muted/30">
+      <section id="programs" className="py-16 px-4 bg-gradient-to-l from-secondary/10 via-background to-primary/10">
         <div className="container mx-auto">
           <h3 className="text-4xl font-bold text-center mb-12 text-foreground">Our Programs</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card>
+            <Card className="hover-scale bg-gradient-to-br from-primary/5 to-card border-t-4 border-t-primary">
               <CardHeader>
-                <CardTitle>Elementary</CardTitle>
+                <CardTitle className="text-primary">Elementary</CardTitle>
                 <CardDescription>Grades K-5</CardDescription>
               </CardHeader>
               <CardContent>
                 Building strong foundations in literacy, mathematics, and social skills through engaging, hands-on learning.
               </CardContent>
             </Card>
-            <Card>
+            <Card className="hover-scale bg-gradient-to-br from-secondary/5 to-card border-t-4 border-t-secondary">
               <CardHeader>
-                <CardTitle>Middle School</CardTitle>
+                <CardTitle className="text-secondary">Middle School</CardTitle>
                 <CardDescription>Grades 6-8</CardDescription>
               </CardHeader>
               <CardContent>
                 Developing critical thinking and independence while exploring diverse subjects and discovering passions.
               </CardContent>
             </Card>
-            <Card>
+            <Card className="hover-scale bg-gradient-to-br from-accent/5 to-card border-t-4 border-t-accent">
               <CardHeader>
-                <CardTitle>High School</CardTitle>
+                <CardTitle className="text-accent">High School</CardTitle>
                 <CardDescription>Grades 9-12</CardDescription>
               </CardHeader>
               <CardContent>
                 Preparing for college and careers with advanced courses, AP programs, and personalized guidance.
               </CardContent>
             </Card>
-            <Card>
+            <Card className="hover-scale bg-gradient-to-br from-primary/5 to-card border-t-4 border-t-primary">
               <CardHeader>
-                <CardTitle>Extracurricular</CardTitle>
+                <CardTitle className="text-primary">Extracurricular</CardTitle>
                 <CardDescription>All Ages</CardDescription>
               </CardHeader>
               <CardContent>
@@ -146,15 +146,15 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 px-4 bg-muted/30">
+      <section id="contact" className="py-16 px-4 bg-gradient-to-br from-accent/10 via-primary/5 to-secondary/10">
         <div className="container mx-auto max-w-4xl">
           <h3 className="text-4xl font-bold text-center mb-12 text-foreground">Get In Touch</h3>
           <div className="grid md:grid-cols-2 gap-8">
-            <Card>
-              <CardHeader>
-                <CardTitle>Visit Us</CardTitle>
+            <Card className="hover-scale border-2 border-primary/20">
+              <CardHeader className="bg-primary/5">
+                <CardTitle className="text-primary">Visit Us</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4">
+              <CardContent className="space-y-4 pt-6">
                 <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-primary mt-1" />
                   <div>
@@ -163,20 +163,20 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Phone className="w-5 h-5 text-primary" />
+                  <Phone className="w-5 h-5 text-secondary" />
                   <p>(555) 123-4567</p>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Mail className="w-5 h-5 text-primary" />
+                  <Mail className="w-5 h-5 text-accent" />
                   <p>info@excellenceacademy.edu</p>
                 </div>
               </CardContent>
             </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>School Hours</CardTitle>
+            <Card className="hover-scale border-2 border-secondary/20">
+              <CardHeader className="bg-secondary/5">
+                <CardTitle className="text-secondary">School Hours</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4">
+              <CardContent className="space-y-4 pt-6">
                 <div className="flex items-start gap-3">
                   <Calendar className="w-5 h-5 text-primary mt-1" />
                   <div>
