@@ -4,7 +4,6 @@ import { BookOpen, Users, Award, Calendar, Phone, Mail, MapPin } from "lucide-re
 import heroImage from "@/assets/school-hero.jpg";
 import elementaryImage from "@/assets/elementary.jpg";
 import middleSchoolImage from "@/assets/middle-school.jpg";
-import libraryImage from "@/assets/library.jpg";
 
 const Index = () => {
   return (
@@ -17,7 +16,7 @@ const Index = () => {
             <div className="hidden md:flex gap-6">
               <a href="#about" className="text-foreground hover:text-primary transition-colors">About</a>
               <a href="#programs" className="text-foreground hover:text-primary transition-colors">Programs</a>
-              <a href="#facilities" className="text-foreground hover:text-primary transition-colors">Facilities</a>
+              <a href="#school-life" className="text-foreground hover:text-primary transition-colors">School Life</a>
               <a href="#contact" className="text-foreground hover:text-primary transition-colors">Contact</a>
             </div>
             <Button>Apply Now</Button>
@@ -162,32 +161,41 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Facilities Section */}
-      <section id="facilities" className="py-16 px-4 bg-muted/30">
+      {/* School Life Section */}
+      <section id="school-life" className="py-16 px-4 bg-muted/30">
         <div className="container mx-auto">
-          <h3 className="text-4xl font-bold text-center mb-12 text-foreground">State-of-the-Art Facilities</h3>
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto items-center">
-            <div className="space-y-6">
-              <div>
-                <h4 className="text-2xl font-semibold text-foreground mb-3">Modern Learning Spaces</h4>
-                <p className="text-muted-foreground">
-                  Smart classrooms equipped with the latest technology, science laboratories, computer labs, and a comprehensive library resource center designed to inspire curiosity and innovation.
-                </p>
-              </div>
-              <div>
-                <h4 className="text-2xl font-semibold text-foreground mb-3">Athletics & Arts</h4>
-                <p className="text-muted-foreground">
-                  Professional-grade gymnasium, outdoor sports fields, art studios, music rooms, and dedicated spaces for creative expression and physical development.
-                </p>
-              </div>
-            </div>
-            <div className="rounded-lg overflow-hidden shadow-xl">
-              <img 
-                src={libraryImage} 
-                alt="Modern School Library" 
-                className="w-full h-full object-cover"
-              />
-            </div>
+          <h3 className="text-4xl font-bold text-center mb-12 text-foreground">School Life</h3>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <Card className="hover-scale">
+              <CardHeader>
+                <CardTitle>Small Class Sizes</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>
+                  Personalized attention with manageable class sizes ensuring every student receives the support they need to excel.
+                </CardDescription>
+              </CardContent>
+            </Card>
+            <Card className="hover-scale">
+              <CardHeader>
+                <CardTitle>Extracurricular Activities</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>
+                  Sports, music, drama, and clubs that help students discover their talents and build confidence beyond the classroom.
+                </CardDescription>
+              </CardContent>
+            </Card>
+            <Card className="hover-scale">
+              <CardHeader>
+                <CardTitle>Community Focus</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>
+                  Strong parent-teacher partnerships and a supportive learning environment where every child is valued and encouraged.
+                </CardDescription>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
