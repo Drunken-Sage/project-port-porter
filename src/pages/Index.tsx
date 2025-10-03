@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { BookOpen, Users, Award, Calendar, Phone, Mail, MapPin } from "lucide-react";
+import { BookOpen, Users, Award, Calendar, Phone, Mail, MapPin, GraduationCap, User } from "lucide-react";
 import heroImage from "@/assets/school-hero.jpg";
 import elementaryImage from "@/assets/elementary.jpg";
 import middleSchoolImage from "@/assets/middle-school.jpg";
@@ -90,6 +90,60 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Staff Section */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto">
+          <h3 className="text-4xl font-bold text-center mb-4 text-foreground">Meet Our Staff</h3>
+          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+            Our dedicated team of qualified educators is committed to nurturing every student's potential and creating a positive learning environment.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <Card className="hover-scale">
+              <CardHeader>
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 mx-auto">
+                  <GraduationCap className="w-8 h-8 text-primary" />
+                </div>
+                <CardTitle className="text-center">Head Teacher</CardTitle>
+                <CardDescription className="text-center">School Leadership</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground text-center text-sm">
+                  Providing visionary leadership and ensuring academic excellence across all programs.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="hover-scale">
+              <CardHeader>
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 mx-auto">
+                  <User className="w-8 h-8 text-primary" />
+                </div>
+                <CardTitle className="text-center">Primary Teachers</CardTitle>
+                <CardDescription className="text-center">Basic 1-6</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground text-center text-sm">
+                  Experienced educators specializing in foundational learning and child development.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="hover-scale">
+              <CardHeader>
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 mx-auto">
+                  <Users className="w-8 h-8 text-primary" />
+                </div>
+                <CardTitle className="text-center">JHS Teachers</CardTitle>
+                <CardDescription className="text-center">Basic 7-9</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground text-center text-sm">
+                  Subject specialists preparing students for BECE and future academic success.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Programs Section */}
       <section id="programs" className="py-16 px-4">
         <div className="container mx-auto">
@@ -162,7 +216,7 @@ const Index = () => {
       </section>
 
       {/* School Life Section */}
-      <section id="school-life" className="py-16 px-4 bg-muted/30">
+      <section id="school-life" className="py-16 px-4">
         <div className="container mx-auto">
           <h3 className="text-4xl font-bold text-center mb-12 text-foreground">School Life</h3>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -201,7 +255,7 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 px-4">
+      <section id="contact" className="py-16 px-4 bg-muted/30">
         <div className="container mx-auto max-w-4xl">
           <h3 className="text-4xl font-bold text-center mb-12 text-foreground">Get In Touch</h3>
           <div className="grid md:grid-cols-2 gap-8">
