@@ -40,7 +40,7 @@ const Index = () => {
             Empowering Young Minds
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Excellence Academy provides quality education for elementary and middle school students in a nurturing, innovative environment.
+            Excellence Academy provides quality education following Ghana's Standards-Based Curriculum for primary and junior high school students in a nurturing, innovative environment.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Button size="lg">Schedule a Visit</Button>
@@ -94,42 +94,68 @@ const Index = () => {
       {/* Programs Section */}
       <section id="programs" className="py-16 px-4">
         <div className="container mx-auto">
-          <h3 className="text-4xl font-bold text-center mb-12 text-foreground">Our Programs</h3>
+          <h3 className="text-4xl font-bold text-center mb-4 text-foreground">Our Programs</h3>
+          <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+            Following Ghana's Standards-Based Curriculum (SBC) developed by NaCCA, our programs emphasize core competencies, 21st-century skills, and learner-centered education.
+          </p>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <Card className="hover-scale overflow-hidden">
               <div className="h-64 overflow-hidden">
                 <img 
                   src={elementaryImage} 
-                  alt="Elementary School Program" 
+                  alt="Primary School Program" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <CardHeader>
-                <CardTitle className="text-2xl text-primary">Elementary School</CardTitle>
-                <CardDescription className="text-base">Grades K-5</CardDescription>
+                <CardTitle className="text-2xl text-primary">Primary School</CardTitle>
+                <CardDescription className="text-base">Basic 1-6 (Ages 6-12)</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">
-                  Building strong foundations in literacy, mathematics, and social skills through engaging, hands-on learning. Our elementary program focuses on fostering curiosity, creativity, and a love for learning in a supportive environment.
+                <p className="text-muted-foreground mb-4">
+                  Building strong foundations through Ghana's Standards-Based Curriculum with engaging, hands-on learning that develops core competencies and critical thinking skills.
                 </p>
+                <div className="space-y-2">
+                  <p className="font-semibold text-foreground">Core Subjects:</p>
+                  <ul className="text-sm text-muted-foreground space-y-1 list-disc list-inside">
+                    <li>English Language</li>
+                    <li>Mathematics</li>
+                    <li>Science</li>
+                    <li>Social Studies</li>
+                    <li>Computing (ICT)</li>
+                    <li>Creative Arts & Design</li>
+                    <li>Religious & Moral Education</li>
+                  </ul>
+                </div>
               </CardContent>
             </Card>
             <Card className="hover-scale overflow-hidden">
               <div className="h-64 overflow-hidden">
                 <img 
                   src={middleSchoolImage} 
-                  alt="Middle School Program" 
+                  alt="Junior High School Program" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <CardHeader>
-                <CardTitle className="text-2xl text-primary">Middle School</CardTitle>
-                <CardDescription className="text-base">Grades 6-8</CardDescription>
+                <CardTitle className="text-2xl text-primary">Junior High School</CardTitle>
+                <CardDescription className="text-base">Basic 7-9 (Ages 12-15)</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">
-                  Developing critical thinking and independence while exploring diverse subjects and discovering passions. Our middle school program prepares students for high school success through rigorous academics and character development.
+                <p className="text-muted-foreground mb-4">
+                  Developing critical thinking, independence, and career readiness while preparing students for the Basic Education Certificate Examination (BECE) and senior high school success.
                 </p>
+                <div className="space-y-2">
+                  <p className="font-semibold text-foreground">Advanced Learning:</p>
+                  <ul className="text-sm text-muted-foreground space-y-1 list-disc list-inside">
+                    <li>Core subjects with increased depth</li>
+                    <li>Career & Technical Education</li>
+                    <li>Life skills development</li>
+                    <li>BECE preparation</li>
+                    <li>Leadership training</li>
+                    <li>Community service projects</li>
+                  </ul>
+                </div>
               </CardContent>
             </Card>
           </div>
