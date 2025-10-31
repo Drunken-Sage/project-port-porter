@@ -25,11 +25,16 @@ const Landing = () => {
           <div className="animate-fade-in text-center md:text-left">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-foreground leading-tight">
               Where Young Minds
-              <span className="block text-primary mt-2">Grow & Thrive</span>
+              <span className="block text-primary mt-2">Grow in Faith & Knowledge</span>
             </h1>
+            <div className="mb-4">
+              <p className="text-base md:text-lg text-primary/80 italic">
+                "Train up a child in the way he should go..."
+              </p>
+            </div>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl">
-              Excellence Academy offers quality education from preschool through junior high school, 
-              following Ghana's Standards-Based Curriculum in a nurturing environment.
+              A Christ-centered school offering quality education from preschool through junior high school, 
+              following Ghana&apos;s Standards-Based Curriculum while building strong faith foundations.
             </p>
             <div className="flex gap-4 flex-wrap justify-center md:justify-start">
               <Link to="/contact">
@@ -64,9 +69,9 @@ const Landing = () => {
               <div className="rounded-full bg-primary/10 w-12 h-12 flex items-center justify-center mb-4">
                 <GraduationCap className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-foreground">Standards-Based Curriculum</h3>
+              <h3 className="text-xl font-semibold mb-3 text-foreground">Christ-Centered Education</h3>
               <p className="text-muted-foreground">
-                Following Ghana's official curriculum to ensure quality education and proper accreditation
+                Biblical principles integrated with Ghana&apos;s official curriculum for spiritual and academic growth
               </p>
             </Card>
 
@@ -104,9 +109,9 @@ const Landing = () => {
               <div className="rounded-full bg-primary/10 w-12 h-12 flex items-center justify-center mb-4">
                 <Heart className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-foreground">Nurturing Environment</h3>
+              <h3 className="text-xl font-semibold mb-3 text-foreground">Christian Values</h3>
               <p className="text-muted-foreground">
-                Safe, supportive atmosphere where children feel valued and encouraged
+                Daily devotions and prayer creating a loving, Christ-centered atmosphere for growth
               </p>
             </Card>
 
@@ -176,11 +181,11 @@ const Landing = () => {
       <section className="py-16 md:py-20 px-4 bg-primary/5">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-            Ready to Give Your Child the Best Start?
+            Give Your Child a Christ-Centered Education
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join Excellence Academy and be part of a community dedicated to educational excellence. 
-            Schedule a visit to see our campus and meet our staff.
+            Join our Christian community dedicated to raising godly, academically excellent children. 
+            Schedule a visit to see our campus, meet our staff, and discover how we partner with families.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link to="/contact">
