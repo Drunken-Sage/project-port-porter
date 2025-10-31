@@ -23,7 +23,7 @@ const About = () => {
         <div className="container mx-auto">
           <h3 className="text-4xl font-bold text-center mb-12 text-foreground">Why Choose Excellence Academy</h3>
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="hover-scale">
+            <Card className="hover-scale hover:shadow-lg hover:shadow-blue-200 transition duration-300 ease-in-out hover:scale-[1.02]">
               <CardHeader>
                 <Award className="w-12 h-12 mb-4 text-primary" />
                 <CardTitle>Award-Winning Education</CardTitle>
@@ -34,7 +34,7 @@ const About = () => {
                 </CardDescription>
               </CardContent>
             </Card>
-            <Card className="hover-scale">
+            <Card className="hover-scale hover:shadow-lg hover:shadow-blue-200 transition duration-300 ease-in-out hover:scale-[1.02]">
               <CardHeader>
                 <Users className="w-12 h-12 mb-4 text-primary" />
                 <CardTitle>Expert Faculty</CardTitle>
@@ -45,7 +45,7 @@ const About = () => {
                 </CardDescription>
               </CardContent>
             </Card>
-            <Card className="hover-scale">
+            <Card className="hover-scale hover:shadow-lg hover:shadow-blue-200 transition duration-300 ease-in-out hover:scale-[1.02]">
               <CardHeader>
                 <BookOpen className="w-12 h-12 mb-4 text-primary" />
                 <CardTitle>Comprehensive Curriculum</CardTitle>
