@@ -26,35 +26,9 @@ const Navigation = () => {
   return (
     <nav className="border-b bg-card sticky top-0 z-50 shadow-sm">
       <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
-          <Link to="/" className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-primary">Excellence Academy</h1>
-          </Link>
-
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-6">
-            {navLinks.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                className={`transition-colors ${isActive(link.to)
-                    ? 'text-primary font-semibold'
-                    : 'text-foreground hover:text-primary'
-                  }`}
-              >
-                {link.label}
-              </Link>
-            ))}
-            <Link to="/contact">
-              <Button>Apply Now</Button>
-            </Link>
-          </div>
-
-          {/* Mobile menu button */}
+      <div className="flex items-center justify-between">
+          {/* Mobile menu button - Left side */}
           <div className="flex md:hidden items-center">
-            <Link to="/contact" className="mr-4">
-              <Button size="sm" className="text-sm">Apply</Button>
-            </Link>
             <Dialog.Root open={isOpen} onOpenChange={setIsOpen}>
               <Dialog.Trigger asChild>
                 <button
@@ -97,6 +71,37 @@ const Navigation = () => {
                 </Dialog.Content>
               </Dialog.Portal>
             </Dialog.Root>
+          </div>
+
+          {/* School Name - Center on mobile, left on desktop */}
+          <Link to="/" className="flex-shrink-0 mx-auto md:mx-0 md:ml-0">
+            <h1 className="text-lg sm:text-xl md:text-2xl font-bold text-primary">Excellence Academy</h1>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center gap-6">
+            {navLinks.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className={`transition-colors ${isActive(link.to)
+                    ? 'text-primary font-semibold'
+                    : 'text-foreground hover:text-primary'
+                  }`}
+              >
+                {link.label}
+              </Link>
+            ))}
+            <Link to="/contact">
+              <Button>Apply Now</Button>
+            </Link>
+          </div>
+
+          {/* Apply button - Mobile only, right side */}
+          <div className="flex md:hidden">
+            <Link to="/contact">
+              <Button size="sm" className="text-sm">Apply</Button>
+            </Link>
           </div>
         </div>
       </div>
