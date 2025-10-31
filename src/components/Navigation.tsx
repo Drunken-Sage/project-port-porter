@@ -16,17 +16,18 @@ const Navigation = () => {
   }, [location]);
 
   const navLinks = [
+    { to: "/", label: "Home" },
     { to: "/about", label: "About" },
     { to: "/staff", label: "Staff" },
-    { to: "/programs", label: "Programs" },
+    { to: "/programs", label: "Our Programs" },
     { to: "/school-life", label: "School Life" },
-    { to: "/contact", label: "Contact" },
+    { to: "/contact", label: "Contact Us" },
   ];
 
   return (
     <nav className="border-b bg-card sticky top-0 z-50 shadow-sm">
       <div className="container mx-auto px-4 py-4">
-      <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between">
           {/* Mobile menu button - Left side */}
           <div className="flex md:hidden items-center">
             <Dialog.Root open={isOpen} onOpenChange={setIsOpen}>
@@ -47,7 +48,7 @@ const Navigation = () => {
                 <Dialog.Overlay className="fixed inset-0 bg-black/50 z-50" />
                 <Dialog.Content className="fixed top-0 right-0 h-full w-3/4 max-w-sm bg-card shadow-lg z-50 overflow-y-auto">
                   <div className="p-4 flex justify-between items-center border-b">
-                    <Dialog.Title className="text-lg font-semibold">Menu</Dialog.Title>
+                    <Dialog.Title className="text-lg font-semibold">Navigation</Dialog.Title>
                     <Dialog.Close asChild>
                       <button className="p-1 rounded-full hover:bg-muted" aria-label="Close">
                         <X className="h-6 w-6" />
@@ -60,8 +61,8 @@ const Navigation = () => {
                         key={link.to}
                         to={link.to}
                         className={`px-4 py-2 rounded-md text-lg transition-colors ${isActive(link.to)
-                            ? 'bg-primary/10 text-primary font-medium'
-                            : 'text-foreground hover:bg-muted'
+                          ? 'bg-primary/10 text-primary font-medium scale-107 '
+                          : 'text-foreground hover:bg-muted'
                           }`}
                       >
                         {link.label}
@@ -85,8 +86,8 @@ const Navigation = () => {
                 key={link.to}
                 to={link.to}
                 className={`transition-colors ${isActive(link.to)
-                    ? 'text-primary font-semibold'
-                    : 'text-foreground hover:text-primary'
+                  ? 'text-primary font-semibold'
+                  : 'text-foreground hover:text-primary'
                   }`}
               >
                 {link.label}
