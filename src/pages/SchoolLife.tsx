@@ -33,11 +33,11 @@ const SchoolLife = () => {
             </Card>
             <Card className="hover-scale">
               <CardHeader>
-                <CardTitle>Extracurricular Activities</CardTitle>
+                <CardTitle>Character Development</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Sports, music, drama, and clubs that help students discover their talents and build confidence beyond the classroom.
+                  Building strong moral values and godly character through biblical teachings, daily devotions, and positive reinforcement.
                 </CardDescription>
               </CardContent>
             </Card>
